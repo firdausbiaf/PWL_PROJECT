@@ -16,7 +16,7 @@ class PelangganController extends Controller
     public function index()
     {
         $pelanggan = DB::table('pelanggan')->get(); // Mengambil semua isi tabel
-        $pelanggan = Pelanggan::orderBy('id', 'asc')->paginate(2);
+        $pelanggan = Pelanggan::orderBy('id', 'asc')->paginate(4);
         return view('data.pelanggan.index', compact('pelanggan'));
     }
 

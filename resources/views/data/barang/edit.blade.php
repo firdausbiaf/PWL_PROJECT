@@ -41,7 +41,7 @@
                         </div>
                         <div class="form-group">
                             <label for="harga">Harga</label> 
-                            <input type="harga" name="harga" class="form-control" id="harga" value="{{ $barang->harga }}" aria-describedby="harga" > 
+                            <input type="number" name="harga" class="form-control" id="harga" value="{{ $barang->harga }}" aria-describedby="harga" > 
                         </div>
                         <div class="form-group">
                             <label for="stok">Stok</label> 

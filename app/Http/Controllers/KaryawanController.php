@@ -17,7 +17,7 @@ class KaryawanController extends Controller
     public function index()
     {
         $karyawan = DB::table('karyawan')->get(); // Mengambil semua isi tabel
-        $karyawan = Karyawan::orderBy('id', 'asc')->paginate(2);
+        $karyawan = Karyawan::orderBy('id', 'asc')->paginate(3);
         return view('data.karyawan.index', compact('karyawan'));
     }
 

@@ -17,7 +17,7 @@ class SupplierController extends Controller
     public function index()
     {
         $supplier = DB::table('supplier')->get(); // Mengambil semua isi tabel
-        $supplier = Supplier::orderBy('id', 'asc')->paginate(2);
+        $supplier = Supplier::orderBy('id', 'asc')->paginate(4);
         return view('data.supplier.index', compact('supplier'));
     }
 

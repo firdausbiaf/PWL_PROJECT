@@ -30,7 +30,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('data/barang', BarangController::class);
 
-Route::get('data/barang/cetak_pdf', [BarangController::class , 'cetak_pdf'])->name('cetak_pdf');
+// Route::get('data/barang/cetak_pdf', [BarangController::class , 'cetak_pdf'])->name('cetak_pdf');
 // Route::get('data/barang/cetak_pdf', [BarangController::class , 'cetak']);
 
 Route::resource('data/supplier', SupplierController::class);
@@ -46,4 +46,4 @@ Route::get('data/transaksi/cetak_pdf', [PenjualanController::class , 'cetak_pdf'
 
 Route::resource('transaksi/pembelian', PembelianController::class);
 
-Route::get('data/transaksi/cetak_pdf', [PembelianController::class , 'cetak_pdf'])->name('cetak_pdf');
+// Route::get('data/transaksi/cetak_pdf', [PembelianController::class , 'cetakpembelian_pdf'])->name('cetakpembelian_pdf');

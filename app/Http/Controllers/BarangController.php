@@ -19,7 +19,7 @@ class BarangController extends Controller
     public function index()
     {
         $barang = DB::table('barang')->get(); // Mengambil semua isi tabel
-        $barang = Barang::orderBy('id', 'asc')->paginate(2);
+        $barang = Barang::orderBy('id', 'asc')->paginate(5);
         return view('data.barang.index', compact('barang'));
         // return view('data.barang.index', ['barang' => $barang,'paginate'=>$paginate]);
     }
